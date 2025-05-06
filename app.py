@@ -215,8 +215,6 @@ else:
     st.subheader(f"Welcome, {st.session_state.username}!")
     st.markdown("This app detects plant leaf diseases using ML, DL, QML, and QNN models.")
     # Remaining part of the code here...
-
-
     uploaded_file = st.file_uploader("📤 Upload Leaf Image", type=["jpg", "jpeg", "png"])
     if uploaded_file:
         image = Image.open(uploaded_file)
